@@ -1,0 +1,75 @@
+/* Working.css */
+
+.working-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .working-cards {
+    display: flex;
+    gap: 20px; /* Adjust the gap between cards */
+  }
+  
+  .working-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Equal width for all cards */
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s; /* Add transform transition */
+  }
+  
+  .working-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Increase size on hover */
+  }
+  
+  .working-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #428ea2;
+    background: linear-gradient(to right, #428ea2, #185a9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorTransition 3s infinite alternate; /* Add color transition animation */
+  }
+  
+  .working-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .working-card li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  /* Added styling for different roles */
+  .farmer {
+    background: linear-gradient(to right, rgb(206, 194, 196), rgb(156, 131, 136));
+  }
+  
+  .consumer {
+    background: linear-gradient(to right, rgb(206, 194, 196), rgb(156, 131, 136));
+  }
+  
+  .admin {
+    background: linear-gradient(to right, rgb(206, 194, 196), rgb(156, 131, 136));
+  }
+  
+  @keyframes colorTransition {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  

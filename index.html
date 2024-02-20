@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CropConnect</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #2ecc71, #3498db);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #fff;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px 16px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #e74c3c;
+    }
+
+    .content-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .slideshow-container {
+      flex: 1;
+      overflow: hidden;
+      background: linear-gradient(to bottom right, #2ecc71, #3498db);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column; /* Adjusted to column layout */
+      align-items: center; /* Center images vertically */
+    }
+
+    .farmer-images {
+      flex: 1; /* Occupy full height */
+      display: flex;
+      flex-direction: row;
+      animation: slideImages 12s linear infinite;
+      margin-top: auto; /* Move images down to center vertically */
+    }
+
+    .farmer-images img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    @keyframes slideImages {
+      0% {
+        transform: translateX(0%);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(-200%);
+      }
+      75% {
+        transform: translateX(-300%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    .description {
+      flex: 1; /* Occupy full height */
+      max-width: 45%;
+      padding: 20px;
+      text-align: right; /* Align text to the right */
+      background: linear-gradient(to bottom right, #2ecc71, #3498db);
+      border-radius: 10px;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+    }
+
+    .description h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .description p {
+      color: #fff;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .welcome-text {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .crop-connect {
+      font-size: 3em;
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="crop-connect-logo.png" alt="Crop Connect Logo">
+      <a href="#home">Crop Connect</a>
+    </div>
+    <div>
+      <a href="#mobile-app">Mobile App</a>
+      <a href="#working">Working</a>
+      <a href="#about">About</a>
+      <a href="#contact-us">Contact Us</a>
+    </div>
+  </nav>
+
+  <div class="content-container">
+    <div class="slideshow-container">
+      <div class="farmer-images">
+        <img src="https://th.bing.com/th/id/OIP.CCuvoPfNQuHgnsEU70bN6gHaFi?w=245&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Farmer 1" class="farmer-image">
+        <img src="https://images.indianexpress.com/2020/05/farmers-759.jpg?w=600" alt="Farmer 2" class="farmer-image">
+        <img src="https://imgs.mongabay.com/wp-content/uploads/sites/30/2020/05/12105507/Banner-2.jpg" alt="Farmer 3" class="farmer-image">
+        <img src="https://images.unsplash.com/photo-1623211269755-569fec0536d2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWFuJTIwZmFybWVyfGVufDB8fDB8fHww" alt="Farmer 4" class="farmer-image">
+      </div>
+    </div>
+    <div class="description">
+      <div class="welcome-text">Welcome to</div>
+      <h1 class="crop-connect">"CropConnect"</h1>
+      <p>Explore a vibrant online platform that bridges the gap between farmers and consumers. CropConnect brings you fresh, locally sourced produce directly from the farmers. Support local agriculture and enjoy the quality of farm-fresh products delivered to your doorstep.</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+ /* Navbar styles */
+/* Navbar styles */
+.navbar {
+    background-color:white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 28px; /* Adjust the top margin as needed */
+  }
+  
+  .navbar a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black; /* Change text color to black or a color that contrasts with the background */
+  }
+  
+  /* Override Bootstrap styles for Navbar */
+  .navbar-light .navbar-brand {
+    color: black; /* Change brand text color */
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-color: black; /* Change toggle icon color */
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: black; /* Change link text color */
+  }
+  
+  .navbar-light .navbar-toggler {
+    border-color: black; /* Change toggle button border color */
+  }
+  
+  .navbar-light .navbar-toggler:focus,
+  .navbar-light .navbar-toggler-icon:focus {
+    outline-color: black; /* Change focus outline color */
+  }
+  
+
+  
+  .gradient-container {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px 50px 50px;
+  }
+  
+  /* Rest of your CSS remains unchanged */
+  
+  .farming-images {
+    width: 40%;
+    overflow: hidden;
+  }
+  
+  .farming-images img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: slide 10s infinite;
+  }
+  
+  @keyframes slide {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(-200%);
+    }
+    75% {
+      transform: translateY(-300%);
+    }
+  }
+  
+  .welcome-section {
+    width: 50%;
+    color: white;
+    text-align: center;
+    padding-right: 20px;
+    margin-top: -20px;
+  }
+  
+  .welcome-text {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }

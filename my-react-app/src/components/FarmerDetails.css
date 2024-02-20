@@ -1,0 +1,84 @@
+/* .FarmerDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .backgroundGradient {
+    
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .cropCard {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .deleteSymbol {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff5252;
+  }
+  
+  .firstLine {
+    order: -1; /* Place on the left for the first line */
+  
+    .FarmerDetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .backgroundGradient {
+        
+        padding: 20px;
+        border-radius: 10px;
+        color: #fff;
+    }
+    
+    .cropCardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .cropCard {
+        background-color: #fff;
+        color: #333;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        width: calc(40.33% - 20px); /* 3 cards in a line with some margin */
+        box-sizing: border-box;
+        transition: transform 0.3s; /* Transition for the hover effect */
+    
+        &:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+    }
+    
+    .deleteSymbol {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #ff5252;
+    }
+    

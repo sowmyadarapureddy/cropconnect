@@ -1,0 +1,78 @@
+/* FarmerProfile.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .consumer {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #185a9d;
+    padding: 30px; /* Increase padding for overall size */
+    border-radius: 10px;
+    width: 400px; /* Increase width for overall size */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .consumer h2 {
+    font-size: 2em; /* Increase font size for the heading */
+    margin-bottom: 20px;
+  }
+  
+  .consumer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .consumer label {
+    margin-bottom: 12px; /* Increase margin for spacing */
+  }
+  
+  .consumer input {
+    width: 100%; /* Take up the full width of the container */
+    padding: 12px; /* Increase padding for input fields */
+    margin-bottom: 20px; /* Increase margin for spacing */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  .consumer button {
+    background-color: #fff;
+    color: #185a9d;
+    padding: 14px 20px; /* Increase padding for button */
+    font-size: 1.2em; /* Increase font size for button */
+    border: 1px solid #185a9d;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .consumer button:hover {
+    background-color: #185a9d;
+    color: #fff;
+  }
+  
+  .consumer button:last-child {
+    margin-top: 20px; /* Increase margin for spacing */
+    background: none;
+    border: none;
+    color: #185a9d;
+    font-size: 1.1em; /* Increase font size for the last button */
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .consumer button:last-child:hover {
+    color: #43cea2;
+  }
+  
